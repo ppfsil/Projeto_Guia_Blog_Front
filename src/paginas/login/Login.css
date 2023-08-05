@@ -1,0 +1,9 @@
+.fundoLogin {
+    background-image: url('https://i.pinimg.com/564x/77/bb/c1/77bbc1353098a9f7bfea2d7fc4fe715d.jpg');
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 75%;
+    background-size: cover;
+    background-position: center;
+    background-color: mediumslateblue; /* Cor de fundo adicional */
+  }
