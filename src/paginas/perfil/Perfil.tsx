@@ -1,10 +1,10 @@
-import React, { useContext, useEffect } from 'react'
+import  { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../contexts/AuthContext'
-//import loginLogo from 'https://i.pinimg.com/564x/2c/a7/95/2ca7951a83fe1f563623dae5eae4b56d.jpg'
+import loginLogo from 'https://i.pinimg.com/564x/2c/a7/95/2ca7951a83fe1f563623dae5eae4b56d.jpg'
 import { toastAlerta } from '../../util/toastAlerta'
 function Perfil() {
-  let navigate = useNavigate()
+  const navigate = useNavigate()
 
   const { usuario } = useContext(AuthContext)
 
@@ -13,7 +13,7 @@ function Perfil() {
       toastAlerta('Dados inconsistentes. Verifique as informações de cadastro.', 'erro')
       navigate("/login")
     }
-  }, [usuario.token])
+  }, [navigate, usuario.token])
 
   return (
     <div className='container mx-auto mt-4 rounded-2xl overflow-hidden'>
