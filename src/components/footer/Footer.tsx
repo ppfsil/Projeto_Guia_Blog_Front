@@ -8,7 +8,7 @@ function Footer() {
 
   let footerComponent
 
-  let data = new Date().getFullYear()
+  const data = new Date().getFullYear()
 
   if(usuario.token !== '') {
     footerComponent = (
